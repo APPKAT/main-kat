@@ -1,0 +1,153 @@
+/* ***STYLE SHEET*** */
+
+
+/* BODY-GENERAL */
+body {
+  background: white;
+  font-family: Verdana;
+}
+
+.header h1 {
+  font-family: Verdana;
+  font-size: 90px;
+  color: white;  
+  text-shadow: 2px 2px 5px grey;
+}
+    
+.header h2 {
+  font-family: Verdana;
+  font-size: 35px;
+  color: white;
+  text-shadow: 2px 2px 5px grey;
+}
+
+.column h3 {
+  font-family: Verdana;
+  font-size: 23px;
+}
+
+p {
+  font-family: 'Arimo';
+  font-size: 18px; 
+  line-height: 1.4;
+}
+
+
+/* NAVIGATION BAR */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+/* NAVIGATION LINKS */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* change color on hover */
+.topnav a:hover {
+  background-color: grey;
+  color: white;
+}
+
+
+/* HEADER */
+.header {
+  padding: 170px;
+  text-align: left;
+  background-image: url("../images/snow.png");
+  background-size: 1500px 800px;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+
+/* CARDS AND COLUMNS */
+
+img {
+  width: 380px;
+  height: 360px;  
+  margin-bottom: 20px;
+}
+
+iframe { 
+  margin-bottom: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 60px;
+  background-color: white;
+  margin-bottom: 90px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* GOOGLE MAPS */
+#map {
+   height: 400px;
+   width: 100%;
+}
+
+
+/* COLOUR PICKER */
+        #red, #green, #blue {
+            float: left;
+            clear: left;
+            width: 300px;
+            margin: 15px;
+        }
+        #swatch {
+            width: 120px;
+            height: 100px;
+            margin-top: 18px;
+            margin-left: 350px;
+            background-image: none;
+        }
+        #red .ui-slider-range { background: #ef2929; }
+        #red .ui-slider-handle { border-color: #ef2929; }
+        #green .ui-slider-range { background: #8ae234; }
+        #green .ui-slider-handle { border-color: #8ae234; }
+        #blue .ui-slider-range { background: #729fcf; }
+        #blue .ui-slider-handle { border-color: #729fcf; }
+
+
+/* FOOTER */
+.footer {
+  padding: 90px;
+  text-align: center;
+  background: #333;
+  color: white;
+  font-size: 13px;
+}

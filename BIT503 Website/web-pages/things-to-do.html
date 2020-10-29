@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <!-- ***THINGS TO DO*** -->
+    
+    <head>
+        <!-- page title -->
+        <title>Things to Do</title>
+        
+        <!-- colour picker -->
+            <!-- Source  https://jqueryui.com/slider/#colorpicker, retrieved Feb 2018 
+            added missing 'https:' to line 7
+            removed local call to /resources/demos/style.css line 8-->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        
+        <!-- link to external css file -->
+        <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+        <!-- link to css file -->
+        <link rel='stylesheet' href='styles/default.css'>
+        <!-- link to js file -->
+        <script src='scripts/color-picker.js'></script>
+        
+    </head>
+ 
+    
+    <body>
+        <!-- NAVIGATION BAR -->
+        <div class="topnav">
+        <a href="index.html">HOME</a>
+        <a href="attractions.html">ATTRACTIONS</a>
+        <a href="things-to-do.html">TO DO</a>
+        <a href="places-to-stay.html">STAY</a>
+        <a href="places-to-eat.html">EAT AND DRINK</a>
+        </div> 
+        
+        <!-- HEADER -->
+        <div class="header">
+        <h1>TO DO</h1>
+        </div>
+        
+        <!-- COLOUR PICKER -->
+        <div class='ui-widget-content' style='border:0;'>
+        <p class='ui-state-default ui-corner-all ui-helper-clearfix' style='padding:4px;'>
+        <span class='ui-icon ui-icon-pencil' style='float:left; margin:-2px 5px 0 0;'></span>
+        Simple Colorpicker
+        </p>
+        <div id='red'></div>
+        <div id='green'></div>
+        <div id='blue'></div> 
+        <div id='swatch' class='ui-widget-content ui-corner-all'></div>
+        </div>
+
+        
+    </body>
+ 
+</html>
